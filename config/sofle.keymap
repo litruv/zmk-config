@@ -31,7 +31,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "Base";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -52,7 +52,7 @@
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "Lower";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "Upper";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -102,7 +102,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "adjust";
+            display-name = "Adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
@@ -112,7 +112,8 @@
             >;
         };
 
-        Gaming {
+        COD {
+            display-name = "COD:MW3";
             bindings = <
 &trans    &kp TAB    &kp N1    &kp N2  &kp N3  &kp N4                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp B     &kp T      &kp Q     &kp W   &kp E   &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
