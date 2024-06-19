@@ -31,8 +31,10 @@
         CustomEvent: CustomEvent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp D &kp D &kp SPACE &kp LS(C) &kp U &kp S &kp T &kp O &kp M &kp SPACE &kp LS(E) &kp V &kp E &kp N &kp T &kp DOT &kp DOT &kp DOT>;
+            bindings = <&kp TAB &kp LS(A) &kp D &kp D &kp SPACE &kp LS(C) &kp U &kp S &kp T &kp O &kp M &kp SPACE &kp LS(E) &kp V &kp E &kp N &kp T &kp DOT &kp DOT &kp DOT &kp ENTER>;
             label = "CUSTOMEVENT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
