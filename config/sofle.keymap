@@ -59,7 +59,9 @@
                           &kp LCTRL  &kp LGUI  &kp LALT  &mo LOWER  &kp SPACE     &kp RET  &mo RAISE  &tog 5  &kp RGUI   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(LS(Z)) LC(Z)>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT_ARROW>,
+                <&inc_dec_kp LC(LS(Z)) LC(Z)>;
         };
 
         lower_layer {
