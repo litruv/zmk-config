@@ -45,6 +45,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        BackspaceOnLeft {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <0 12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
