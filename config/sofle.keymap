@@ -121,6 +121,10 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &kp PRINTSCREEN  &trans     &trans    &trans    &trans     &kp BACKSLASH     &trans
                           &trans        &trans        &trans        &trans        &trans    &trans           &trans     &trans    &trans    &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp A B>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         adjust_layer {
