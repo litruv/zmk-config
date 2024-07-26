@@ -44,12 +44,34 @@
             label = "NEW_MACRO";
         };
 
-        AUp: AUp {
+        DCancelA: AUp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp A>, <&macro_release>, <&kp D>;
+            bindings =
+                <&macro_release>,
+                <&kp A>,
+                <&macro_press>,
+                <&kp D>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp D>;
 
             label = "AUP";
+        };
+
+        ACancelD: ACancelD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp D>,
+                <&macro_press>,
+                <&kp A>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp A>;
+
+            label = "ACANCELD";
         };
     };
 
@@ -156,11 +178,11 @@
         COD {
             display-name = "COD:MW3";
             bindings = <
-&trans    &kp TAB    &kp N1    &kp N2  &kp N3  &kp N4                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp B     &kp T      &kp Q     &kp W   &kp E   &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp I     &kp LSHFT  &kp A     &kp S   &kp D   &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LGUI  &kp LCTRL  &kp Z     &kp X   &kp C   &kp V   &kp M        &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                     &kp LALT  &to 0   &kp G   &kp C   &kp SPACE    &kp ENTER  &mo 0   &trans  &trans  &trans
+&trans    &kp TAB    &kp N1     &kp N2  &kp N3     &kp N4                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp B     &kp T      &kp Q      &kp W   &kp E      &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp I     &kp LSHFT  &ACancelD  &kp S   &DCancelA  &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LGUI  &kp LCTRL  &kp Z      &kp X   &kp C      &kp V   &kp M        &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                     &kp LALT   &to 0   &kp G      &kp C   &kp SPACE    &kp ENTER  &mo 0   &trans  &trans  &trans
             >;
         };
 
