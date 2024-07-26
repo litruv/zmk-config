@@ -44,7 +44,7 @@
             label = "NEW_MACRO";
         };
 
-        DCancelA: AUp {
+        DCancelA: DCancelA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -56,7 +56,7 @@
                 <&macro_release>,
                 <&kp D>;
 
-            label = "AUP";
+            label = "DCANCELA";
         };
 
         ACancelD: ACancelD {
