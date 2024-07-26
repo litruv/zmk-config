@@ -43,6 +43,14 @@
             bindings = <&kp TAB &kp LS(P) &kp R &kp I &kp N &kp T &kp SPACE &kp LS(S) &kp T &kp R &kp I &kp N &kp G &kp ENTER>;
             label = "NEW_MACRO";
         };
+
+        AUp: AUp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp A>, <&macro_release>, <&kp D>;
+
+            label = "AUP";
+        };
     };
 
     combos {
