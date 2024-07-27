@@ -54,7 +54,9 @@
                 <&kp D>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp D>;
+                <&kp D>,
+                <&macro_press>,
+                <&kp A>;
 
             label = "DCANCELA";
         };
@@ -69,7 +71,9 @@
                 <&kp A>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp A>;
+                <&kp A>,
+                <&macro_press>,
+                <&kp D>;
 
             label = "ACANCELD";
         };
