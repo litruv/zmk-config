@@ -86,6 +86,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <0 12>;
         };
+
+        ComboDelete {
+            bindings = <&kp DELETE>;
+            key-positions = <53 54>;
+        };
     };
 
     keymap {
@@ -130,7 +135,7 @@
 &kp F9     &trans         &kp UP_ARROW    &kp LC(E)  &CustomEvent         &mt LA(S) LA(P)                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &mt LC(LS(F)) LC(F)  &PrintString                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LC(SLASH)  &trans          &trans     &trans               &kp LC(B)        &soft_off    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans          &to 4      &kp ENTER            &trans           &kp DEL      &trans  &trans  &trans  &trans  &trans
+                          &trans          &to 4      &kp ENTER            &trans           &trans       &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
