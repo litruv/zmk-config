@@ -1,0 +1,18 @@
+panels:
+  templateasdf:
+    perm: admin
+    rows: '3'
+    title: '&Tits'
+    empty: AIR
+    item:
+      '4':
+        material: bolt_armor_trim_smithing_template
+        stack: 1
+        name: '&fClick Me!'
+        commands:
+          - 'msg= You clicked, the item!'
+          - cpc
+      '13':
+        material: bone
+      '22':
+        material: blaze_spawn_egg
