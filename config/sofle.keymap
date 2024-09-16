@@ -91,6 +91,16 @@
             bindings = <&kp DELETE>;
             key-positions = <53 54>;
         };
+
+        NextDesktop {
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            key-positions = <4 5>;
+        };
+
+        PreviousDesktop {
+            bindings = <&kp LC(LG(LEFT_ARROW))>;
+            key-positions = <4 3>;
+        };
     };
 
     keymap {
