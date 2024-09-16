@@ -84,7 +84,7 @@
 
         BackspaceOnLeft {
             bindings = <&kp BACKSPACE>;
-            key-positions = <0 12>;
+            key-positions = <24 36>;
         };
 
         ComboDelete {
