@@ -95,11 +95,13 @@
         NextDesktop {
             bindings = <&kp LG(LC(RIGHT_ARROW))>;
             key-positions = <4 5>;
+            require-prior-idle-ms = <1000>;
         };
 
         PreviousDesktop {
             bindings = <&kp LC(LG(LEFT_ARROW))>;
             key-positions = <4 3>;
+            require-prior-idle-ms = <1000>;
         };
     };
 
