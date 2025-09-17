@@ -1,7 +1,7 @@
 if SHIELD_SOFLE_DONGLE
 
 # Max 16 characters in keyboard name
-config ZMK_SOFLE
+config ZMK_KEYBOARD_NAME
     default "Sofle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
