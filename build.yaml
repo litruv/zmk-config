@@ -24,6 +24,5 @@ include:
     shield: sofle_right
   - board: nice_nano_v2
     shield: sofle_dongle
-    cmake-args: -DCONFIG_FILE=sofle_dongle.conf
   - board: nice_nano_v2
     shield: settings_reset
