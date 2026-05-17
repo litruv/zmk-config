@@ -76,6 +76,24 @@
 
             label = "ACANCELD";
         };
+
+        esc_key_long_tap: esc_key_long_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp ESC>;
+
+            label = "ESC_KEY_LONG_TAP";
+            tap-ms = <200>;
+        };
+
+        Long_Alt: Long_Alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT>;
+
+            label = "LONG_ALT";
+            tap-ms = <200>;
+        };
     };
 
     combos {
@@ -108,22 +126,20 @@
         MT_Long: MT_Long {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_LONG";
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&Long_Alt>;
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         MT_Keys: MT_Keys {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_KEYS";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&esc_key_long_tap>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
     };
